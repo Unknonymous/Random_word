@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: solid 1px burlywood; */
+}
+body{
+    width: 980px;
+    margin: auto;
+    background-color: black;
+}
+#wrapper{
+    padding-top: 10px;
+    background-color: darkred;
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2, h3{
+    color: white;
+    margin-left: auto;
+    margin-right: auto
+}
+#wordbox{
+    border: solid 1px yellow;
+    width: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btn{
+    margin: 5px;
+    display: inline;
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

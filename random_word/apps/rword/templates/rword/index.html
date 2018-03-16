@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'rword/css/styles.css' %}">
+    <title>Random Word Generator</title>
+</head>
+<body>
+    <div id='wrapper'>
+        <center>
+            <h3>Random Word (attempt #{{ request.session.count }})</h3>
+
+            <div id="wordbox">
+                <h2>{{ranword}}</h2>
+            </div><!--closes wordbox-->
+
+            <form action='/generate' method="GET">
+                {% csrf_token %}
+                <input type='submit' value='Generate' class='btn'>
+            </form>
+
+            <form action='/reset' method="GET">
+                {% csrf_token %}
+                <input type='submit' value='Reset Counter' class='btn'>
+            </form>
+
+        </center>
+    </div><!--closes wrapper-->
+</body>
+</html>
